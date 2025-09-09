@@ -20,18 +20,18 @@ public class StudentInDerSpengergasse
         return matura;
     }
     
-    public void setName(String setName)
+    public void setName(String newName)
     {
-        name = setName;
+        name = newName;
     }
     
-    public void setAlter(int setAlter)
+    public void setAlter(int newAlter)
     {
-        alter = setAlter;
+        alter = newAlter;
     }
     
-    public void setMatura(boolean setMatura)
+    public void setMatura(boolean newMatura)
     {
-        matura = setMatura;
+        matura = newMatura;
     }
 }    
