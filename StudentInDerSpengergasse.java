@@ -9,7 +9,7 @@ public class StudentInDerSpengergasse
     private int     alter;
     private boolean matura;
     
-    /*konstruktor--> gibt eine objektreferenz zurück*/
+    /*Constructor--> gibt eine objektreferenz zurück*/
     public StudentInDerSpengergasse(String newName, int newAlter, boolean newMatura)
     {
         setName(newName);
