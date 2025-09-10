@@ -2,7 +2,7 @@
     + steht für methoden*/
 
 
-
+/*Instanze*/
 public class StudentInDerSpengergasse
 { 
     private String  name;
