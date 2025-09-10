@@ -24,7 +24,7 @@ public class StudentInDerSpengergasse
         setAlter(14);
         setMatura(false);
     }
-    
+    /*getMethoden*/
     public String getName()
     {
         return name;
@@ -40,7 +40,7 @@ public class StudentInDerSpengergasse
     {
         return matura;
     }
-    /*Methode*/
+    /*setMethode*/
     public void setName(String newName)
     {
         name = newName;
