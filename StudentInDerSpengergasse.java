@@ -1,8 +1,29 @@
+/*  - steht für private
+    + steht für methoden*/
+
+
+
 public class StudentInDerSpengergasse
 { 
     private String  name;
     private int     alter;
     private boolean matura;
+    
+    /*konstruktor--> gibt eine objektreferenz zurück*/
+    public StudentInDerSpengergasse(String newName, int newAlter, boolean newMatura)
+    {
+        setName(newName);
+        setAlter(newAlter);
+        setMatura(newMatura);
+    
+    }
+    
+    public StudentInDerSpengergasse()
+    {
+        setName("UNKN");
+        setAlter(14);
+        setMatura(false);
+    }
     
     public String getName()
     {
@@ -19,7 +40,7 @@ public class StudentInDerSpengergasse
     {
         return matura;
     }
-    
+    /*Methode*/
     public void setName(String newName)
     {
         name = newName;
