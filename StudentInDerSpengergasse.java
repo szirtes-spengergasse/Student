@@ -1,10 +1,13 @@
-/*  - steht für private
-    + steht für methoden*/
+/*
+- steht für private
++ steht für methoden
+*/
 
 
 /*Instanze*/
 public class StudentInDerSpengergasse
 { 
+    //Eigenschaft
     private String  name;
     private int     alter;
     private boolean matura;
@@ -43,6 +46,8 @@ public class StudentInDerSpengergasse
     /*setMethode*/
     public void setName(String newName)
     {
+        //Eigenschaft name
+        //Parameter newName
         name = newName;
     }
     
@@ -54,5 +59,10 @@ public class StudentInDerSpengergasse
     public void setMatura(boolean newMatura)
     {
         matura = newMatura;
+    }
+    //print Methode
+    public void printStudent()
+    {
+        System.out.println(name + " - " + alter + " Jahre: " + matura);
     }
 }    
