@@ -13,17 +13,17 @@ public class StudentInDerSpengergasse
     private boolean matura;
     
     /*Constructor--> gibt eine objektreferenz zurück*/
-    public StudentInDerSpengergasse(String newName, int newAlter, boolean newMatura)
+    public StudentInDerSpengergasse(String name, int alter, boolean matura)
     {
-        setName(newName);
-        setAlter(newAlter);
-        setMatura(newMatura);
+        machName(name);
+        setAlter(alter);
+        setMatura(matura);
     
     }
     
     public StudentInDerSpengergasse()
     {
-        setName("UNKN");
+        machName("UNKN");
         setAlter(14);
         setMatura(false);
     }
@@ -39,30 +39,38 @@ public class StudentInDerSpengergasse
         return alter;
     }
     
-    public boolean getMatura()
+    public boolean gibMatura()/*get wird nur dadurch definiert, was in der Methode passiert, nicht einem befehl wie: get...*/
     {
         return matura;
     }
     /*setMethode*/
-    public void setName(String newName)
+    public void machName(String name)/*set wird nur dadurch definiert, was in der Methode passiert, nicht einem befehl wie: set...*/
     {
-        //Eigenschaft name
-        //Parameter newName
-        name = newName;
+        //Eigenschaft   this.name
+        //Parameter     name
+        this.name = name;
     }
     
-    public void setAlter(int newAlter)
+    public void setAlter(int alter)
     {
-        alter = newAlter;
+        this.alter = alter;
     }
     
-    public void setMatura(boolean newMatura)
+    public void setMatura(boolean matura)
     {
-        matura = newMatura;
+        this.matura = matura;
     }
     //print Methode
     public void printStudent()
     {
-        System.out.println(name + " - " + alter + " Jahre: " + matura);
+        if (matura == true)
+        {
+           System.out.println(name + " - " + alter + " Jahre: " + "hat matura"); 
+        }
+        
+        else
+        {
+             System.out.println(name + " - " + alter + " Jahre: " + "hat keine matura");   
+        }
     }
 }    
