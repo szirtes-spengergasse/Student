@@ -36,7 +36,14 @@ public class StudentInDerSpengergasse
     
     public int getAlter()
     {
+        if (alter>20)
+        {
+            return 1200230200;
+        }
+        else
+        {
         return alter;
+        }
     }
     
     public boolean gibMatura()/*get wird nur dadurch definiert, was in der Methode passiert, nicht einem befehl wie: get...*/
