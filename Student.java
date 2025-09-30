@@ -48,15 +48,15 @@ public class Student
     }
     public String getaccount()
     {
-        String name1, name3;
-        name1 = getvorname().substring(0, 3);
-        name3 = name1.toUpperCase();
-        return name3 + alter;
+        String name1, name3;                        // setzt zwei Variablen mit dem Datentypen STRING
+        name1 = getvorname().substring(0, 3);       // variable1 = funktionswert.teil(von, bis)          
+        name3 = name1.toUpperCase();                // variable2 = variable1.in caps()
+        return name3 + alter;                       // return variable2 + alter
     }
     
     public String getvollname()
     {
-        return getvorname() + " " + getnachname();
+        return getvorname() + " " + getnachname();  // benutzt funktionen und setzt diese(ergebnisse) zusammen
     }
     public String getName()
     {
