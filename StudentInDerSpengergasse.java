@@ -33,7 +33,7 @@ public class StudentInDerSpengergasse
         return name;
     
     }
-    
+     
     public int getAlter()
     {
         if (alter>20)

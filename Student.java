@@ -31,13 +31,32 @@ public class Student
         setAlter(14);
         setMatura(false);
     }
-   
+    
+    public String getvorname()
+    {
+        int pos;
+        pos = name.indexOf(" ");
+        return name.substring(0, pos);
+    }
+    
     public String getnachname()
     {
         int pos;
         
         pos = name.indexOf(" ");
         return name.substring(pos + 1, name.length());
+    }
+    public String getaccount()
+    {
+        String name1, name3;
+        name1 = getvorname().substring(0, 3);
+        name3 = name1.toUpperCase();
+        return name3 + alter;
+    }
+    
+    public String getvollname()
+    {
+        return getvorname() + " " + getnachname();
     }
     public String getName()
     {
@@ -71,7 +90,7 @@ public class Student
     {
         this.matura = matura;
     }
-   
+
     public String getVorname()
     {
         int pos;
