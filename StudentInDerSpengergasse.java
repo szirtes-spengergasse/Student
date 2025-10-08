@@ -31,19 +31,18 @@ public class StudentInDerSpengergasse
     public String getName()
     {
         return name;
-    
     }
      
     public int getAlter()
     {
-        if (alter>20)
+       /* if (alter>20)
         {
             return 1200230200;
         }
         else
-        {
+        {*/
         return alter;
-        }
+        /*}*/
     }
     
     public boolean gibMatura()/*get wird nur dadurch definiert, was in der Methode passiert, nicht einem befehl wie: get...*/
@@ -60,7 +59,15 @@ public class StudentInDerSpengergasse
     
     public void setAlter(int alter)
     {
-        this.alter = alter;
+        if ((alter>= 14) && (alter<=65))
+        {
+            this.alter = alter;
+        }
+        else
+        {
+            System.out.println("Fehler: Das alter muss zwischen 14 und 65 Jahren liegen!!");
+            this.alter = 14;
+        }
     }
     
     public void setMatura(boolean matura)
@@ -68,16 +75,16 @@ public class StudentInDerSpengergasse
         this.matura = matura;
     }
     //print Methode
-    public void printStudent()
+    public void printStudentInDerSpengergasse()
     {
         if (matura == true)
         {
-           System.out.println(name + " - " + alter + " Jahre: " + "hat matura"); 
+            System.out.println(name + " - " + alter + " Jahre: " + "hat matura"); 
         }
         
         else
         {
-             System.out.println(name + " - " + alter + " Jahre: " + "hat keine matura");   
+            System.out.println(name + " - " + alter + " Jahre: " + "hat keine matura");   
         }
     }
 }    

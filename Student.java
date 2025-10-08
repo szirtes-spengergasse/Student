@@ -35,6 +35,7 @@ public class Student
     public String getvorname()
     {
         int pos;
+        
         pos = name.indexOf(" ");
         return name.substring(0, pos);
     }
@@ -49,6 +50,7 @@ public class Student
     public String getaccount()
     {
         String name1, name3;                        // setzt zwei Variablen mit dem Datentypen STRING
+        
         name1 = getvorname().substring(0, 3);       // variable1 = funktionswert.teil(von, bis)          
         name3 = name1.toUpperCase();                // variable2 = variable1.in caps()
         return name3 + alter;                       // return variable2 + alter
@@ -106,6 +108,8 @@ public class Student
        Susi - 22 Jahre: hat keine Matura
        Werner - 21 Jahre: hat Matura
     */
+   
+   
     public void printStudent()
     {
         if (matura == true)
@@ -118,7 +122,6 @@ public class Student
         }
     }
 }
-
 
 
 
