@@ -15,7 +15,6 @@ public class Test2
         alex = new StudentInDerSpengergasse("alex", 13, false); //mit diesen eigenschaftaen
         alex.printStudentInDerSpengergasse(); //ruft die MEthode von der class StudentInDerSpengergasse auf
         assertEquals(14, alex.getAlter());
-    
     }
    
     @Test
@@ -25,7 +24,6 @@ public class Test2
         susi = new StudentInDerSpengergasse("susi", 25, false);
         susi.printStudentInDerSpengergasse();
         assertEquals(25, susi.getAlter());
-    
     }
 
     @Test
@@ -35,6 +33,5 @@ public class Test2
         max = new StudentInDerSpengergasse("max", 66, true);
         max.printStudentInDerSpengergasse();
         assertEquals(14, max.getAlter());
-    
     }
 }

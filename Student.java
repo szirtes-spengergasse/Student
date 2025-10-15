@@ -47,6 +47,7 @@ public class Student
         pos = name.indexOf(" ");
         return name.substring(pos + 1, name.length());
     }
+    
     public String getaccount()
     {
         String name1, name3;                        // setzt zwei Variablen mit dem Datentypen STRING
@@ -60,6 +61,7 @@ public class Student
     {
         return getvorname() + " " + getnachname();  // benutzt funktionen und setzt diese(ergebnisse) zusammen
     }
+    
     public String getName()
     {
         //return this.name;
