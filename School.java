@@ -45,8 +45,8 @@ public class School
             }
         }
     }
-
-    public Student jungsterStudent2()
+    
+          public Student jungsterStudent2()
     {
         int min;
         Student minStudent;
@@ -80,6 +80,39 @@ public class School
         return minStudent;
     }
 
+         public Student alterStudent2()
+    {
+        int max;
+        Student maxStudent;
+        
+        max = 0;
+        maxStudent = null;
+        if (student0 != null)
+        {
+            if (student0.getAlter() > max)
+            {
+                max = student0.getAlter();
+                maxStudent = student0;
+            }
+        }
+        if (student1 != null)
+        {
+            if (student1.getAlter() > max)
+            {
+                max = student1.getAlter();
+                maxStudent = student1;
+            }
+        }
+        if (student2 != null)
+        {
+            if (student2.getAlter() > max)
+            {
+                max = student2.getAlter();
+                maxStudent = student2;
+            }
+        }
+        return maxStudent;
+    }
     
     public int jungsterStudent()
     {
