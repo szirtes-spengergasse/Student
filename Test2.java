@@ -35,3 +35,4 @@ public class Test2
         assertEquals(14, max.getAlter());
     }
 }
+
