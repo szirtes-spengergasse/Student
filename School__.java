@@ -46,4 +46,32 @@ public void abmeldenSt2()
     assertequals(null, susi.getSchool());
     
 }
+
+@Test
+public void falschaschule()
+{
+    School htl, hak;
+    Student max, susi, hanna;
+    
+    htl = new School("HTl");
+    hak = new School("HAK");
+    max = new Student("Max", 29, true);
+    hanna = new Student("Hanna", 19, false);
+    susi = new Student("Susi", 40, true);
+    hak.aufnehmen(max);
+    htl.aufnehmen(hanna);
+    htl.aufnehmen(susi);
+    assertequals(2, htl.anzahlstudents());
+    assertequals(hak, max.getSchool());
+    assertequals(htl, hanna.getSchool());
+    assertequals(htl, susi.getSchool());
+    hak.abmelden(susi);
+    //fehler
+    assertequals(2, htl.anzhalstudents());
+    assertequals(1, hak.anzahlStudents());
+    assertequals(htl, max.getSchool());
+    assertequals(htl, hanna.getSchool());
+    assertequals(htl, susi.getSchool());
+    
+}
 }
