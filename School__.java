@@ -19,7 +19,7 @@ public void abmeldennull()
     htl.aufnehmen(max);
     htl.abmelden(null);
     //Fehler
-    assertequals(1, htl.anzhalstudents());
+    assertEquals(1, htl.anzahlStudent());
 }
 
 @Test
@@ -35,15 +35,15 @@ public void abmeldenSt2()
     htl.aufnehmen(max);
     htl.aufnehmen(hanna);
     htl.aufnehmen(susi);
-    assertequals(3, htl.anzahlstudents());
-    assertequals(htl, max.getSchool());
-    assertequals(htl, hanna.getSchool());
-    assertequals(htl, susi.getSchool());
+    assertEquals(3, htl.anzahlStudent());
+    assertEquals(htl, max.getSchool());
+    assertEquals(htl, hanna.getSchool());
+    assertEquals(htl, susi.getSchool());
     htl.abmelden(susi);
-    assertequals(2, htl.anzhalstudents());
-    assertequals(htl, max.getSchool());
-    assertequals(htl, hanna.getSchool());
-    assertequals(null, susi.getSchool());
+    assertEquals(2, htl.anzahlStudent());
+    assertEquals(htl, max.getSchool());
+    assertEquals(htl, hanna.getSchool());
+    assertEquals(null, susi.getSchool());
     
 }
 
@@ -61,17 +61,17 @@ public void falschaschule()
     hak.aufnehmen(max);
     htl.aufnehmen(hanna);
     htl.aufnehmen(susi);
-    assertequals(2, htl.anzahlstudents());
-    assertequals(hak, max.getSchool());
-    assertequals(htl, hanna.getSchool());
-    assertequals(htl, susi.getSchool());
+    assertEquals(2, htl.anzahlStudent());
+    assertEquals(hak, max.getSchool());
+    assertEquals(htl, hanna.getSchool());
+    assertEquals(htl, susi.getSchool());
     hak.abmelden(susi);
     //fehler
-    assertequals(2, htl.anzhalstudents());
-    assertequals(1, hak.anzahlStudents());
-    assertequals(htl, max.getSchool());
-    assertequals(htl, hanna.getSchool());
-    assertequals(htl, susi.getSchool());
+    assertEquals(2, htl.anzahlStudent());
+    assertEquals(1, hak.anzahlStudent());
+    assertEquals(htl, max.getSchool());
+    assertEquals(htl, hanna.getSchool());
+    assertEquals(htl, susi.getSchool());
     
 }
 }
